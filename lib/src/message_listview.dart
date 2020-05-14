@@ -76,6 +76,7 @@ class MessageListView extends StatefulWidget {
 
 class _MessageListViewState extends State<MessageListView> {
   double previousPixelPostion = 0.0;
+  DateTime currentDate;
 
   bool scrollNotificationFunc(ScrollNotification scrollNotification) {
     if (previousPixelPostion == 0.0) {
@@ -114,7 +115,6 @@ class _MessageListViewState extends State<MessageListView> {
 
   @override
   Widget build(BuildContext context) {
-    DateTime currentDate;
 
     final constraints = widget.constraints ??
         BoxConstraints(
