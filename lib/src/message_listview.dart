@@ -172,7 +172,7 @@ class _MessageListViewState extends State<MessageListView> {
                         0) {
                       showDate = true;
                       currentDate = messageDate;
-                    } else if (i == 0) {
+                    } else if (i == 0 && !widget.inverted) {
                       showDate = true;
                       currentDate = messageDate;
                     } else {
