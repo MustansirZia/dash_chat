@@ -148,6 +148,14 @@ class _MessageListViewState extends State<MessageListView> {
                       last = true;
                     }
 
+                    if (i > 0) {
+                        currentDate =  DateTime(
+                          widget.messages[i - 1].createdAt.year,
+                          widget.messages[i - 1].createdAt.month,
+                          widget.messages[i - 1].createdAt.day,
+                        );
+                    }
+
                     DateTime messageDate = DateTime(
                       widget.messages[i].createdAt.year,
                       widget.messages[i].createdAt.month,
